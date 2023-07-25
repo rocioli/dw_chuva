@@ -1,3 +1,4 @@
+// Variables
 $margin: 0;
 $padding: 0;
 $box-sizing: border-box;
@@ -9,30 +10,27 @@ $white: #fff;
 $gray: #424342;
 $mint: #d2f0dd;
 
+
 body {
     margin: $margin;
     padding: $padding;
     box-sizing: $box-sizing;
-
-    @if $primary-color ==#ffffff {
-        background-color: $primary-color;
-    }
-
-    @else {
-        background-color: $secondary-color;
-    }
+    background-color: if($primary-color == #ffffff, $primary-color, $secondary-color);
 }
 
+// Logo
 .logo {
     width: 100px;
     height: 100px;
     object-fit: cover;
 }
 
+// Nav bar
 .bg-nav {
     background-color: $blanched-almond;
 }
 
+// Botones
 .btn {
     color: rgb(166, 21, 21);
 
@@ -41,6 +39,7 @@ body {
     }
 }
 
+// Nav bar
 .navbar-nav {
     margin-left: auto;
 
@@ -64,6 +63,7 @@ body {
     }
 }
 
+//Carrusel
 .carouselExampleIndicators {
     .carousel-inner {
         .carousel-item {
@@ -72,24 +72,37 @@ body {
     }
 }
 
+
 .bg-black {
     color: $white;
 }
 
-.carousel-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
+// Filtros
 .filtros {
     margin: 20px 0;
+    padding: 20px 0;
+    margin-left: 50px;
 
     h3 {
         margin-bottom: 10px;
     }
 }
 
+.filter-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: $secondary-color;
+    color: $white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: darken($secondary-color, 10%);
+    }
+}
+
+// Artículos
 .articulos {
     margin-bottom: 20px;
 
@@ -98,11 +111,13 @@ body {
     }
 }
 
+// IMG FLUID
 .img-fluid {
     width: 100%;
     height: auto;
 }
 
+// Contenedor
 .container {
     margin-top: 20px;
 
@@ -127,6 +142,7 @@ body {
     }
 }
 
+// Botones
 .btn {
     padding: 10px 20px;
     font-size: 16px;
@@ -141,6 +157,7 @@ body {
     }
 }
 
+// Botones primarios
 .btn-primary {
     background-color: $primary-color;
 
@@ -149,21 +166,25 @@ body {
     }
 }
 
+//Contenedor de tutoriales
 .container-tutoriales {
     margin: 20px;
 }
 
+// Estilos para títulos de nivel 2
 h2 {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
+//Bajada en tutoriales
 .bajada-tutoriales {
     font-size: 16px;
     line-height: 1.5;
 }
 
+//Grid 3x2
 .grid-container-3x2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -173,20 +194,22 @@ h2 {
     margin: 20px;
 }
 
+// Grid
 .grid-item {
     position: relative;
     width: 100%;
     padding-bottom: 56.25%;
+
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
 }
 
-.grid-item iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
+// Contenedor de clases
 .container-clases {
     margin-top: 20px;
 
@@ -207,7 +230,6 @@ h2 {
         margin-right: 40px;
         text-align: justify;
     }
-
 
     .img-clases {
         width: 100%;
@@ -234,8 +256,8 @@ h2 {
     }
 
     .seccion2 .row {
-        margin-left: -15px; 
-        margin-right: -15px; 
+        margin-left: -15px;
+        margin-right: -15px;
     }
 
     .abonos-container {
@@ -282,26 +304,48 @@ h2 {
     }
 }
 
-.footer {
-    background-color: $mint;
-    padding: 50px 0;
-
-    p {
-        color: $gray;
+// Formulario
+@mixin form-styles($label-color, $input-background, $input-text-color, $input-border) {
+    label {
+        color: $label-color;
     }
 
-    .social-links li {
-        margin-right: 10px;
-        list-style-type: none;
+    input[type="text"],
+    input[type="tel"],
+    select,
+    textarea {
+        background-color: $input-background;
+        color: $input-text-color;
+        border: $input-border;
+        padding: 10px;
+        width: 100%;
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
 
-        a {
-            color: $gray;
-            text-decoration: none;
+    .form-check-label {
+        color: $input-text-color;
+    }
+
+    button[type="submit"] {
+        background-color: $input-background;
+        color: $input-text-color;
+        border: none;
+        padding: 10px 20px;
+        font-size: 18px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: darken($input-background, 10%);
         }
     }
 }
 
+// Pie de página
 .footer {
+    background-color: $mint;
+    padding: 50px 0;
+
     h3 {
         color: $black;
         font-size: 20px;
@@ -322,6 +366,7 @@ h2 {
     }
 }
 
+// barra inferior
 .bottom-bar {
     background-color: $mint;
     color: $white;
@@ -332,6 +377,7 @@ h2 {
         text-align: center;
     }
 }
+
 
 @media (max-width: 767px) {
 

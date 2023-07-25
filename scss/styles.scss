@@ -15,7 +15,7 @@ body {
     margin: $margin;
     padding: $padding;
     box-sizing: $box-sizing;
-    background-color: if($primary-color == #ffffff, $primary-color, $secondary-color);
+    background-color: if($primary-color ==#ffffff, $primary-color, $secondary-color);
 }
 
 // Logo

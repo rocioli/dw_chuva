@@ -1,0 +1,165 @@
+// Contenedor
+.container {
+    margin-top: 20px;
+
+    .row {
+        align-items: center;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form-check {
+            margin-top: 10px;
+        }
+    }
+}
+
+
+
+//Contenedor de tutoriales
+.container-tutoriales {
+    margin: 20px;
+}
+
+// Estilos para títulos de nivel 2
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+//Bajada en tutoriales
+.bajada-tutoriales {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+//Grid 3x2
+.grid-container-3x2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 20px;
+    max-width: 100%;
+    margin: 20px;
+}
+
+// Grid
+.grid-item {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+// Contenedor de clases
+.container-clases {
+    margin-top: 20px;
+
+    .row {
+        align-items: center;
+    }
+
+    .img-profesora {
+        display: block;
+        width: 100%;
+        max-width: 50%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .texto-profesora {
+        margin-right: 40px;
+        text-align: justify;
+    }
+
+    .img-clases {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .seccion2 {
+        margin-top: 40px;
+    }
+
+    .seccion2 h2 {
+        margin-left: 40px;
+    }
+
+    .seccion2 p {
+        text-align: justify;
+        margin-left: 40px;
+    }
+
+    .seccion2 .col-md-3 {
+        margin-bottom: 10px;
+        padding: 0;
+    }
+
+    .seccion2 .row {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    .abonos-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+
+        h2 {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        .abono {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+
+            h3 {
+                margin-bottom: 10px;
+                font-size: 20px;
+            }
+
+            ul {
+                list-style: none;
+                padding: 0;
+                margin-bottom: 20px;
+                font-size: 16px;
+                line-height: 1.5;
+
+                li {
+                    margin-bottom: 5px;
+                }
+            }
+
+            .btn-abono {
+                font-size: 18px;
+                background-color: $secondary-color;
+            }
+        }
+    }
+}
+

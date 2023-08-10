@@ -1,0 +1,35 @@
+// Botones
+
+
+// Botones
+.btn {
+    color: rgb(166, 21, 21);
+
+    &:hover {
+        color: $white;
+    }
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: $primary-color;
+    color: $white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: darken($primary-color, 10%);
+    }
+}
+
+
+// Botones primarios
+.btn-primary {
+    background-color: $primary-color;
+
+    &:hover {
+        background-color: darken($primary-color, 10%);
+    }
+}

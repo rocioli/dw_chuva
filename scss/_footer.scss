@@ -1,0 +1,42 @@
+// Pie de página
+.footer {
+    background-color: #d2f0dd;
+    padding: 50px 0;
+
+    h3 {
+        color: #333;
+        font-size: 20px;
+    }
+
+    p {
+        color: #424342;
+    }
+
+    .social-links li {
+        display: inline-block; /* Cambia a display inline-block para disposición horizontal */
+        margin-right: 40px; 
+        margin-top: 20px;
+        list-style-type: none;
+    
+        a {
+            color: #424342;
+            text-decoration: none;
+    
+            i {
+                font-size: 25px;
+            }
+        }
+    }
+}
+
+// Barra inferior
+.bottom-bar {
+    background-color: #d2f0dd;
+    color: #fff;
+    padding: 10px 0;
+
+    p {
+        margin: 0;
+        text-align: center;
+    }
+}

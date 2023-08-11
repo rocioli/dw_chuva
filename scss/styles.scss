@@ -7,6 +7,7 @@
 @import 'forms';
 @import 'navbar';
 @import 'forms';
+@import 'articulos';
 
 body {
     margin: $margin;
@@ -24,16 +25,11 @@ body {
 
 h1 {
     text-align: center;
+    font-family: 'Borel', cursive;
+    margin-top: 30px;
 }
 
-// Artículos
-.articulos {
-    margin-bottom: 20px;
 
-    .card {
-        margin-bottom: 20px;
-    }
-}
 
 @media (max-width: 767px) {
 

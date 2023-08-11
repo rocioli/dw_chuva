@@ -1,24 +1,38 @@
-// Filtros
 .filtros {
-    margin: 20px 0;
-    padding: 20px 0;
-    margin-left: 50px;
+    margin-top: 20px;
+}
 
-    h3 {
-        margin-bottom: 10px;
-    }
+.custom-label {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.row.align-items-center {
+    display: flex;
+    justify-content: space-between;
+}
+
+.row.align-items-center > div {
+    flex: 1;
+    margin-right: 10px;
 }
 
 .filter-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: $secondary-color;
-    color: $white;
+    margin-top: 30px;
+    background-color: rgb(237, 194, 113);
+    color: black; 
     border: none;
+    padding: 8px 16px;
     border-radius: 4px;
     cursor: pointer;
-
-    &:hover {
-        background-color: darken($secondary-color, 10%);
-    }
+    transition: background-color 0.3s;
 }
+
+
+.filter-button:hover {
+    background-color: orange; 
+}
+
+
+
+

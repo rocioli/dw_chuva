@@ -1,0 +1,52 @@
+.articulos {
+    .card {
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .card-img-top {
+                max-width: 100%;
+                height: auto;
+            }
+
+            .card-title {
+                margin-top: 10px;
+                font-size: 1.2rem;
+                text-align: center;
+            }
+
+            .price-input {
+                display: flex;
+                align-items: center;
+                margin-top: 10px;
+
+                p {
+                    margin: 0;
+                    font-weight: bold;
+                }
+
+                .form-check-input {
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
+
+.btn-comprar {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-comprar:hover {
+    background-color: #ff9800;
+}

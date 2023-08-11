@@ -2,10 +2,13 @@
 
 .bg-nav {
     background-color: $blanched-almond;
+    margin-bottom: 20px;
     padding-left: 0;
     padding-right: 0;
 
     .container {
+        margin-top: 5px;
+        margin-bottom: 5px;
         padding-left: 15px; 
         padding-right: 15px; 
     }
@@ -18,8 +21,7 @@
     .nav-item {
         flex: 1;
         text-align: center;
-        margin: 0;
-    }
+    };
 
     .nav-link {
         color: #40042a;

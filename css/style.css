@@ -245,10 +245,13 @@ h2 {
 
 .bg-nav {
   background-color: blanchedalmond;
+  margin-bottom: 20px;
   padding-left: 0;
   padding-right: 0;
 }
 .bg-nav .container {
+  margin-top: 5px;
+  margin-bottom: 5px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -259,7 +262,6 @@ h2 {
 .navbar-nav .nav-item {
   flex: 1;
   text-align: center;
-  margin: 0;
 }
 .navbar-nav .nav-link {
   color: #40042a;
